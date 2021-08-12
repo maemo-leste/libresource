@@ -12,6 +12,7 @@ Build-Depends:
  pkg-config,
  check,
  libglib2.0-dev,
+ libdbus-1-dev,
 Standards-Version: 4.3.0
 
 Package: libresource
