@@ -1,0 +1,5 @@
+libresource (0.24.1) unstable; urgency=medium
+
+  * Initial Leste packaging.
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Thu, 12 Aug 2021 10:42:18 +0200

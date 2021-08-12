@@ -1,0 +1,35 @@
+Source: libresource
+Section: libs
+Priority: optional
+Maintainer: Merlijn Wajer <merlijn@wizzup.org>
+Build-Depends:
+ debhelper-compat (= 12),
+ libtool,
+ libtool-bin,
+ autoconf,
+ autoconf-archive,
+ automake,
+ pkg-config,
+ check,
+ libglib2.0-dev,
+Standards-Version: 4.3.0
+
+Package: libresource
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Resource management for MeeGo. Resource policy client library.
+
+Package: libresource-client
+Architecture: any
+Depends:
+ libresource (= ${binary:Version}),
+Description: libresource test tool
+  Resource management for MeeGo. This is a simple test tool to
+  play with resource management.
+
+Package: libresource-dev
+Architecture: any
+Depends:
+ libresource (= ${binary:Version}),
+Description: libprolog development headers
+ This package contains development files for libresource.

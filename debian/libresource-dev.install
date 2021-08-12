@@ -1,0 +1,3 @@
+usr/include/resource*
+usr/lib/*/*.so
+usr/lib/*/pkgconfig/libresource*.pc

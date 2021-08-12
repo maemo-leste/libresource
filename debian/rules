@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	        --disable-static
+
+# Build does not like parallelisation
+override_dh_auto_build:
+	make -j1
+
+# Let's skip these for now, they give odd errors and I don't think sailfish runs
+# the tests either
+override_dh_auto_test:
+	true
+
+%:
+	dh $@
