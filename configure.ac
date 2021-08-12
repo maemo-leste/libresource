@@ -2,8 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.59)
 
-AC_INIT([libresource],
-	m4_esyscmd([build-aux/git-version-gen .tarball-version]))
+AC_INIT([libresource], [0.24.1.1])
 
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_MACRO_DIR([m4])
